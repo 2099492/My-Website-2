@@ -43,9 +43,6 @@ function addStar() {
 
 Array(200).fill().forEach(addStar);
 
-// const spaceTexture = new THREE.TextureLoader().load('../textures/space.jpeg');
-// scene.background = spaceTexture;
-
 const moonTexture = new THREE.TextureLoader().load('../textures/moon.jpg');
 const normalTexture = new THREE.TextureLoader().load('../textures/normal.jpeg');
 
@@ -61,7 +58,7 @@ moon.position.z = 30;
 moon.position.x = -10;
 
 const effect = new AsciiEffect( renderer, ' .:-+*=%@#', { canvas: document.querySelector('#canvas'), invert: true } );
-effect.setSize( window.innerWidth, window.innerHeight );
+effect.setSize( screen.width, screen.height );
 effect.domElement.style.color = 'green';
 effect.domElement.style.backgroundColor = 'black';
 document.body.appendChild( effect.domElement );
