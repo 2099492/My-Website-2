@@ -18,8 +18,6 @@
             font-size: 150%;
             color: green;
             font-weight: bold;
-            height: 100%;
-            width: 100%;
         }
 
         html, body {
