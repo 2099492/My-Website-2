@@ -1,10 +1,6 @@
 import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 import { OrbitControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls.js';
 import { AsciiEffect } from 'https://cdn.skypack.dev/three/examples/jsm/effects/AsciiEffect.js';
-import { TextGeometry } from 'https://cdn.skypack.dev/three/examples/jsm/geometries/TextGeometry.js';
-import { FontLoader } from 'https://cdn.skypack.dev/three/examples/jsm/loaders/FontLoader.js';
-
-
 
 const scene = new THREE.Scene;
 
@@ -24,11 +20,6 @@ const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(30, 30, 30);
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add( pointLight, ambientLight );
-
-// const lightHelper = new THREE.PointLightHelper(pointLight);
-// const gridHelper = new THREE.GridHelper(200, 50);
-// scene.add( lightHelper, gridHelper );
-
 
 function addStar() {
     const geometry = new THREE.SphereGeometry(0.25, 24, 24);
@@ -54,8 +45,6 @@ const moon = new THREE.Mesh(
     })
 );
 scene.add(moon);
-// moon.position.z = 30;
-// moon.position.x = -10;
 
 const effect = new AsciiEffect( renderer, ' .:-+*=%@#', { canvas: document.querySelector('#canvas'), invert: true } );
 effect.setSize( screen.width, screen.height );
@@ -63,13 +52,7 @@ effect.domElement.style.color = 'green';
 effect.domElement.style.backgroundColor = 'black';
 document.body.appendChild( effect.domElement );
 
-const controls = new OrbitControls(camara, effect.domElement);
-
-
-// const text = new TextGeometry('Dit is text', {
-//     font: 'arial'
-// });
-// document.getElementById('main').appendChild(text.domElement);
+new OrbitControls(camara, effect.domElement);
 
 function animate() {
     requestAnimationFrame( animate );
