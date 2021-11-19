@@ -54,8 +54,8 @@ const moon = new THREE.Mesh(
     })
 );
 scene.add(moon);
-moon.position.z = 30;
-moon.position.x = -10;
+// moon.position.z = 30;
+// moon.position.x = -10;
 
 const effect = new AsciiEffect( renderer, ' .:-+*=%@#', { canvas: document.querySelector('#canvas'), invert: true } );
 effect.setSize( screen.width, screen.height );
