@@ -36,9 +36,9 @@
 </head>
 <body>
 <canvas id="canvas"></canvas>
-<main class="p-12 flex-col justify-start md:w-1/2 sm:w-2/3">
+<main class="p-12 flex-col justify-start sm:w-2/3">
 <header>
-    <h1>Laurens van der Bilt</h1>
+    <h1>Hi, my name is Laurens van der Bilt</h1>
 </header>
 <p>I am a learning programmer living in Amsterdam and studying at the bit-academy.
     My hobbies include programming, gaming and hanging out with friends.</p>
