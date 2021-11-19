@@ -24,6 +24,7 @@
             margin: 0;
             height: 100%;
             overflow-x: hidden;
+            background-color: black;
         }
     </style>
 
