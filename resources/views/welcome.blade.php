@@ -40,7 +40,7 @@
 <header>
     <h1>Hi, my name is Laurens van der Bilt</h1>
 </header>
-<p>I am a learning programmer living in Amsterdam and studying at the bit-academy.
+<p>I am a learning programmer living in Amsterdam and studying at the Bit Academy.
     My hobbies include programming, gaming and hanging out with friends.</p>
 <br>
 <p>I built this with Laravel and THREE.js</p>
